@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/saveLocationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lbl_savelocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="Image save location" />
+
+                <EditText
+                    android:id="@+id/txt_savinglocation"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveLocationLayou2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="Image name prefix" />
+
+                <EditText
+                    android:id="@+id/txt_imageprefix"
+                    android:layout_width="300dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveLocationLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="Image numbering" />
+
+                <EditText
+                    android:id="@+id/txt_numbering"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_add_exif_gps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add EXIF GPS data" />
+
+            <LinearLayout
+                android:id="@+id/saveLocationLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="GPS sample count" />
+
+                <EditText
+                    android:id="@+id/txt_gps_sample_count"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveLocationLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="GPS sample interval" />
+
+                <EditText
+                    android:id="@+id/txt_gps_sample_interval"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_liveview_at_start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start live view at application start" />
+            
+            <LinearLayout
+                android:id="@+id/saveLocationLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="Manual focus MIN" />
+
+                <EditText
+                    android:id="@+id/txt_focus_min"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/saveLocationLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dip"
+                    android:text="Manual focus range" />
+
+                <EditText
+                    android:id="@+id/txt_focus_max"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:inputType="number" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+            </ScrollView>
+
+</RelativeLayout>

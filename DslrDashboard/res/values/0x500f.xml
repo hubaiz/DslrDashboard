@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0x500f0x0064">100 Lo 1</string>
+    <string name="p0x500f0x007d">125 Lo 0.7</string>
+    <string name="p0x500f0x008c">140 Lo 0.5</string>
+    <string name="p0x500f0x00a0">160 Lo 0.3</string>
+    <string name="p0x500f0x00c8">200</string>
+    <string name="p0x500f0x00fa">250</string>
+    <string name="p0x500f0x0118">280</string>
+    <string name="p0x500f0x0140">320</string>
+    <string name="p0x500f0x0190">400</string>
+    <string name="p0x500f0x01f4">500</string>
+    <string name="p0x500f0x0230">560</string>
+    <string name="p0x500f0x0280">640</string>
+    <string name="p0x500f0x0320">800</string>
+    <string name="p0x500f0x03e8">1000</string>
+    <string name="p0x500f0x044c">1100</string>
+    <string name="p0x500f0x04e2">1250</string>
+    <string name="p0x500f0x0640">1600</string>
+    <string name="p0x500f0x07d0">2000</string>
+    <string name="p0x500f0x0898">2200</string>
+    <string name="p0x500f0x09c4">2500</string>
+    <string name="p0x500f0x0c80">3200</string>
+    <string name="p0x500f0x0fa0">4000 Hi 0.3</string>
+    <string name="p0x500f0x1194">4500 Hi 0.5</string>
+    <string name="p0x500f0x1388">5000 Hi 0.7</string>
+    <string name="p0x500f0x1900">6400 Hi 1</string>
+    <string name="p0x500f0x1f40">Hi 0.3</string>
+    <string name="p0x500f0x2328">Hi 0.5</string>
+    <string name="p0x500f0x2710">Hi 0.7</string>
+    <string name="p0x500f0x3200">Hi 1</string>
+    <string name="p0x500f0x6400">Hi 2</string>
+	<item type="integer" name="v0x500f0x0064" format="integer">0x0064</item>
+	<item type="integer" name="v0x500f0x007d" format="integer">0x007d</item>
+	<item type="integer" name="v0x500f0x008c" format="integer">0x008c</item>
+	<item type="integer" name="v0x500f0x00a0" format="integer">0x00a0</item>
+	<item type="integer" name="v0x500f0x00c8" format="integer">0x00c8</item>
+	<item type="integer" name="v0x500f0x00fa" format="integer">0x00fa</item>
+	<item type="integer" name="v0x500f0x0118" format="integer">0x0118</item>
+	<item type="integer" name="v0x500f0x0140" format="integer">0x0140</item>
+	<item type="integer" name="v0x500f0x0190" format="integer">0x0190</item>
+	<item type="integer" name="v0x500f0x01f4" format="integer">0x01f4</item>
+	<item type="integer" name="v0x500f0x0230" format="integer">0x0230</item>
+	<item type="integer" name="v0x500f0x0280" format="integer">0x0280</item>
+	<item type="integer" name="v0x500f0x0320" format="integer">0x0320</item>
+	<item type="integer" name="v0x500f0x03e8" format="integer">0x03e8</item>
+	<item type="integer" name="v0x500f0x044c" format="integer">0x044c</item>
+	<item type="integer" name="v0x500f0x04e2" format="integer">0x04e2</item>
+	<item type="integer" name="v0x500f0x0640" format="integer">0x0640</item>
+	<item type="integer" name="v0x500f0x07d0" format="integer">0x07d0</item>
+	<item type="integer" name="v0x500f0x0898" format="integer">0x0898</item>
+	<item type="integer" name="v0x500f0x09c4" format="integer">0x09c4</item>
+	<item type="integer" name="v0x500f0x0c80" format="integer">0x0c80</item>
+	<item type="integer" name="v0x500f0x0fa0" format="integer">0x0fa0</item>
+	<item type="integer" name="v0x500f0x1194" format="integer">0x1194</item>
+	<item type="integer" name="v0x500f0x1388" format="integer">0x1388</item>
+	<item type="integer" name="v0x500f0x1900" format="integer">0x1900</item>
+	<item type="integer" name="v0x500f0x1f40" format="integer">0x1f40</item>
+	<item type="integer" name="v0x500f0x2328" format="integer">0x2328</item>
+	<item type="integer" name="v0x500f0x2710" format="integer">0x2710</item>
+	<item type="integer" name="v0x500f0x3200" format="integer">0x3200</item>
+	<item type="integer" name="v0x500f0x6400" format="integer">0x6400</item>
+</resources>

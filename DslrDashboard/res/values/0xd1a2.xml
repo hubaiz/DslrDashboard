@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1a20x0000">Live view off</string>
+    <string name="p0xd1a20x0001">Live view on</string>
+	<item type="integer" name="v0xd1a20x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1a20x0001" format="integer">0x0001</item>
+</resources>

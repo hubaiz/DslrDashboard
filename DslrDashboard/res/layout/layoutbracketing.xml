@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/bktleftlayout1"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:orientation="vertical">
+		<ImageView android:id="@+id/img_bktshoot" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/shoot"/>
+		<ImageView android:id="@+id/img_bktshootsdram" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/shootsdram"/>
+		<ImageView android:id="@+id/img_bktaf" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/af"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/bkttoplayout1"
+		android:layout_alignParentTop="true" android:layout_toRightOf="@+id/bktleftlayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_bkt" android:layout_height="48dip"
+			android:layout_width="48dip" android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" />
+		<ImageView android:id="@+id/img_bracketingtype"
+			android:layout_width="48dip" android:layout_height="48dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<TextView android:id="@+id/txt_aebracketingcount"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="1" android:layout_width="48dip" android:textColor="@android:color/black"
+			android:background="@drawable/my_button" android:layout_margin="1dip"></TextView>
+  	<LinearLayout
+  		android:id="@+id/aebktlayout"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  	>
+  		<ImageView
+  			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+  			android:src="@drawable/aebkt" android:background="@drawable/my_button"/>
+		<TextView android:id="@+id/txt_aebracketingstep"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="0.0 EV" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+  	</LinearLayout>
+  	<LinearLayout
+  		android:id="@+id/wbbktlayout"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  	>
+  		<ImageView
+  			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+  			android:src="@drawable/wbbkt" android:background="@drawable/my_button"/>
+  	</LinearLayout>
+  	<LinearLayout
+  		android:id="@+id/adlbktlayout"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  	>
+  		<ImageView
+  			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+  			android:src="@drawable/adlbkt" android:background="@drawable/my_button"/>
+  	</LinearLayout>
+  	</LinearLayout>
+  	<LinearLayout
+  		android:id="@+id/custombktlayout"
+  		android:layout_below="@+id/bkttoplayout1"
+  		android:layout_toRightOf="@+id/bktleftlayout1"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  	>
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_bkt_custom" 
+			android:layout_height="48dip" android:layout_width="48dip" 
+			android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" android:src="@drawable/custombkt"/>
+		<TextView android:id="@+id/txt_custombktstep"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="0.0 EV" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_custombktdirection"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="Both" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_custombktcount"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="3" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_builtin_custom_bkt" 
+			android:layout_height="48dip" android:layout_width="48dip" 
+			android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" android:src="@drawable/custombktbuiltin"/>
+				<!-- 
+		<ImageView android:id="@+id/img_custombktshoot" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/shoot"/>
+		<ImageView android:id="@+id/img_custombktshootsdram" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/shootsdram"/>
+			-->
+  	</LinearLayout>
+  	<LinearLayout
+  		android:id="@+id/soundshootinglayout"
+  		android:layout_below="@+id/custombktlayout"
+  		android:layout_toRightOf="@+id/bktleftlayout1"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal" 
+  	>
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_sound_shooting" 
+			android:layout_height="48dip" android:layout_width="48dip" 
+			android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" android:src="@android:drawable/ic_btn_speak_now"/>
+		<TextView android:id="@+id/txt_sound_denominator"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="10" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_sound_threshold"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="10" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_sound_rate"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="10" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_sound_recording_media"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="Sdcard" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+		<TextView android:id="@+id/txt_sound_value"
+			android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+			android:text="10" android:layout_width="48dip"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip"></TextView>
+			<ImageView 
+				android:id="@+id/img_sound_indicator"
+				android:layout_width="48dip" android:layout_height="48dip"
+				android:src="@android:drawable/ic_notification_overlay"
+				android:padding="18sp" android:visibility="gone"/>
+  	</LinearLayout>
+  </merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd05d0x0000">Face detection system</string>
+    <string name="p0xd05d0x0001">Wide area AF</string>
+    <string name="p0xd05d0x0002">Normal area AF</string>
+    <string name="p0xd05d0x0003">Target tracking AF</string>
+	<item type="integer" name="v0xd05d0x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd05d0x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd05d0x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd05d0x0003" format="integer">0x0003</item>
+</resources>

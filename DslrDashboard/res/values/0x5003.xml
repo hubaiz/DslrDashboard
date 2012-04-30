@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="p0x50034288x2848">Size L (4288x2848)</string>
+	<string name="p0x50034928x3264">Size L (4928x3264)</string>
+	<string name="p0x50033216x2136">Size M (3216x2136)</string>
+	<string name="p0x50033696x2448">Size M (3696x2448)</string>
+	<string name="p0x50032144x1424">Size S (2144x1424)</string>
+	<string name="p0x50032464x1632">Size S (2464x1632)</string>
+	<string name="v0x50034288x2848">4288x2848</string>
+	<string name="v0x50033216x2136">3216x2136</string>
+	<string name="v0x50032144x1424">2144x1424</string>
+	<string name="v0x50034928x3264">4928x3264</string>
+	<string name="v0x50033696x2448">3696x2448</string>
+	<string name="v0x50032464x1632">2464x1632</string>
+	
+</resources>

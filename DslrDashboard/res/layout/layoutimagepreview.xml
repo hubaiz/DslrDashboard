@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<GridView android:id="@+id/img_gallery"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:numColumns="auto_fit" android:verticalSpacing="5dp"
+		android:horizontalSpacing="5dp" android:columnWidth="160dp"
+		android:stretchMode="columnWidth" android:gravity="center"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/img_gallery_progress"/>
+		<ProgressBar android:id="@+id/img_gallery_progress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent" android:layout_height="2dip"
+			android:layout_marginTop="1dip" android:layout_marginBottom="1dip"
+			android:layout_above="@+id/imgGalleryButtons"/>
+		<LinearLayout android:id="@+id/imgGalleryButtons"
+	    android:layout_marginLeft="50dp"
+		android:orientation="horizontal"
+		android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/chk_phonePictures" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/galleryphone"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/chk_dslrPictures" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/gallerycamera"/>
+		<ImageView android:id="@+id/btn_galleryselectall" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:src="@drawable/content_selectall"
+			android:layout_margin="1dip" />
+		<ImageView android:id="@+id/btn_gallerydelete" android:layout_width="48dip"
+		    android:src="@drawable/content_discard"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" />
+								    		
+	</LinearLayout>
+	<ImageView android:id="@+id/img_sdcardpreview"
+	    android:background="@android:color/black"
+		android:visibility="gone" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scaleType="centerCrop"/>
+		
+</RelativeLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+	>
+	<LinearLayout android:id="@+id/leftlayout1"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:orientation="vertical">
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/btn_lvoverlay" android:visibility="gone"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:layout_margin="1dip"
+			android:src="@drawable/mainmenu"
+			android:background="@drawable/checkableimageview" />
+		<ImageView android:id="@+id/img_shoot" android:layout_width="72dip"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/shoot" />
+		<ImageView android:id="@+id/img_shootsdram"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip"
+			android:src="@drawable/shootsdram" />
+		<ImageView android:id="@+id/img_af" android:layout_width="72dip"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/af" />
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/btn_lvfocusoverlay"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:layout_margin="1dip"
+			android:src="@drawable/mainmenu"
+			android:background="@drawable/checkableimageview"
+			android:visibility="gone" 
+			/>
+			</LinearLayout>
+	<ImageView android:src="@drawable/lv"
+	 android:id="@+id/img_liveview"
+	  android:layout_height="wrap_content"
+	   android:layout_width="wrap_content"
+	    android:layout_toRightOf="@+id/leftlayout1"
+	    android:layout_centerVertical="true"
+	    android:scaleType="matrix" android:visibility="gone"/>
+	<com.dslr.dashboard.LvSurfaceBase
+	    android:id="@+id/lvsurface"
+	    android:layout_toRightOf="@+id/leftlayout1"
+	    android:layout_below="@+id/toplayout1"
+	    android:layout_toLeftOf="@+id/rightlayout2"
+	    android:layout_above="@+id/bottomlayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+			
+	<LinearLayout android:id="@+id/rightlayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/img_compression"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<TextView android:id="@+id/txt_iso" android:layout_width="72dip" 
+		    android:gravity="center_vertical|center_horizontal"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:text="100"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:textColor="@android:color/black" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_exposuremetering"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_lvafmode" android:layout_width="72dip"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" />
+	    <TextView android:id="@+id/txt_burstnumber"
+			android:layout_height="72dip" android:gravity="center_vertical|center_horizontal"
+			android:layout_width="72dip" android:textColor="@android:color/black"
+			android:background="@drawable/my_button" android:layout_margin="1dip"
+			android:text="1" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/rightlayout2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_below="@+id/rightlayout1"
+		android:orientation="horizontal">
+		<ImageView android:id="@+id/img_imagesize"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_wb" android:layout_width="72dip"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_focusmetering"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_focusmodebtn"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_stillcapturemode"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/toplayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" 
+		android:orientation="horizontal" android:layout_toRightOf="@+id/leftlayout1">
+		<ImageView android:id="@+id/img_cameramode"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+	    		<ImageView android:id="@+id/img_scenemode"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_cameramode" android:layout_width="72dip"
+			android:layout_height="72dip" android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" />
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_liveview" android:layout_width="72dip"
+			android:layout_height="72dip" android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" />
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_movierec" android:layout_width="72dip"
+			android:layout_height="72dip" android:layout_margin="1dip"
+			android:background="@drawable/checkableimageview" 
+			android:src="@drawable/movierec"/>
+				<ProgressBar
+		    android:id="@+id/batteryinfo"
+		    style="?android:attr/progressBarStyleHorizontal"
+		    android:layout_gravity="center_vertical"
+		    android:layout_width="72dip"
+		    android:layout_height="wrap_content" />
+					</LinearLayout>
+	<LinearLayout android:id="@+id/toplayout2" android:layout_toLeftOf="@+id/rightlayout1"
+	    android:layout_width="fill_parent" android:layout_height="72dip"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:layout_toRightOf="@+id/toplayout1"  
+	    android:layout_alignParentTop="true"
+	    android:orientation="horizontal">
+	<TextView android:text="Hi" android:id="@+id/txt_apertureexpstatus"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_marginLeft="5dip"></TextView>
+	<TextView android:text="f 5.6" android:textColor="@android:color/black"
+	    android:gravity="center_vertical|center_horizontal"
+		android:id="@+id/txt_aperture" android:layout_height="fill_parent"
+		android:background="@drawable/my_button" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content" 
+		android:layout_marginLeft="5dip"></TextView>
+	<TextView android:text="0" android:id="@+id/txt_expindicatestatus"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_centerHorizontal="true" 
+		android:layout_marginLeft="5dip"></TextView>
+	<TextView android:textColor="@android:color/black"
+	    android:gravity="center_vertical|center_horizontal"
+		android:background="@drawable/my_button" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:id="@+id/txt_shutter" android:layout_height="fill_parent"
+		android:layout_width="wrap_content" android:text="1/1000"
+		android:layout_marginLeft="5dip"></TextView>
+	<TextView android:text="Hi" android:id="@+id/txt_shutterexpstatus"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="5dip"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/bottomlayout2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_toRightOf="@+id/leftlayout1" android:orientation="horizontal">
+		<ImageView android:id="@+id/img_flash" android:layout_width="72dip"
+			android:layout_height="72dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" />
+		<TextView android:id="@+id/txt_internalflashcompensation"
+			android:layout_height="72dip" android:gravity="center_vertical|center_horizontal"
+			android:text="+1.3 EV" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+			</LinearLayout>
+	<LinearLayout android:id="@+id/bottomlayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" 
+		android:layout_toRightOf="@+id/bottomlayout2" android:orientation="horizontal">
+		<TextView android:id="@+id/txt_exposurecompensation"
+			android:layout_height="72dip" android:gravity="center_vertical|center_horizontal"
+			android:text="+1.3 EV" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+		<TextView android:id="@+id/txt_exposureevstep"
+			android:layout_height="72dip" android:gravity="center_vertical|center_horizontal"
+			android:text="1/3 EV" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+		<TextView android:id="@+id/txt_recordingmedia"
+			android:layout_height="72dip" android:gravity="center_vertical|center_horizontal"
+			android:text="SDCARD" android:layout_width="wrap_content"
+			android:textColor="@android:color/black" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+		<ImageView android:id="@+id/img_activepicctrlitem"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+		<ImageView android:id="@+id/img_activedlighting"
+			android:layout_width="72dip" android:layout_height="72dip"
+			android:background="@drawable/my_button" android:layout_margin="1dip" />
+	</LinearLayout><LinearLayout
+        android:id="@+id/lvfocuslayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="72dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bottomlayout1"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/focus_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:max="2000"
+            android:progress="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvfocuslayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lvfocuslayout1"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_focusmin"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_margin="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/lvfocusleft" />
+
+        <ImageView
+            android:id="@+id/img_focusleft"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/lvfocusleftstep" />
+
+
+        <ImageView
+            android:id="@+id/img_focusright"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/lvfocusrightstep" />
+
+        <ImageView
+            android:id="@+id/img_focusmax"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/lvfocusright" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvfocuslayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lvfocuslayout2"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/lvfocus1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="right"
+            >
+            
+            <ImageView
+            android:id="@+id/img_lvzoomout"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/zoomout" />
+
+        <ImageView
+            android:id="@+id/img_lvzoomin"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/zoomin" />
+
+        <ImageView
+            android:id="@+id/img_focusbkt"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/focusbkt" />
+        
+        <ImageView
+            android:id="@+id/img_lvosd"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/lvosd" />
+        
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lvfocus2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" 
+            >
+        
+        <ImageView
+            android:id="@+id/img_focusmeassure"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_margin="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/focusrange" />
+            
+        <ImageView
+            android:id="@+id/img_focusminus"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/txt_focusstep"
+            android:layout_width="72dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/img_focusplus"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/my_button"
+            android:src="@drawable/plus" />
+            
+        </LinearLayout>
+    </LinearLayout>
+<com.dslr.dashboard.LayoutBracketing android:id="@+id/bracketinglayouttablet"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/rightlayout2"
+	    android:layout_toRightOf="@+id/img_liveview"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</RelativeLayout>

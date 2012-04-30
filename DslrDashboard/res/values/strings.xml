@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">DslrDashboard</string>
+    
+    <string name="about">
+    &lt;b&gt;&lt;a href="http://forum.xda-developers.com/showpost.php?p=17428159&amp;postcount=1"&gt;DSLR Dashboard V0.25.10 beta&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+    by&lt;br/&gt;&lt;br/&gt;
+    Zoltan Hubai&lt;br/&gt;&lt;br/&gt;
+    Control your DSLR with your Android phone<br/>
+    over USB&lt;br/&gt;
+	&lt;br/&gt;
+    uses &lt;b&gt;&lt;a href="http://www.libraw.org"&gt;LibRaw&lt;/a&gt; for NEF processing 
+	&lt;br/&gt;
+	&lt;br/&gt;
+    uses &lt;b&gt;&lt;a href="http://www.exiv2.org"&gt;Exiv2&lt;/a&gt; for Exif processing 
+    </string>
+    <string name="nocamera">
+    &lt;font color="red"&gt;No DSLR camera found on USB&lt;/font&gt;
+    </string>
+    
+    <string-array name="exifNames">
+        <item>Exif.Photo.ExposureTime@Exposure</item>
+        <item>Exif.Photo.FNumber@Aperture</item>
+        <item>Exif.Photo.ISOSpeedRatings@ISO</item>
+        <item>Exif.Photo.WhiteBalance@White Balance</item>
+        <item>Exif.Photo.ExposureBiasValue@Exposure Bias</item>
+        <item>Exif.Photo.ExposureProgram@Exposure program</item>
+        <item>Exif.Photo.ExposureMode@Exposure Mode</item>
+        <item>Exif.Photo.MeteringMode@Metering mode</item>
+        <item>Exif.Photo.Flash@Flash</item>
+        <item>Exif.Photo.FocalLength@Focal Length</item>
+        <item>Exif.Image.Orientation@Orientation</item>
+        <item>Exif.Image.ImageWidth@Image Width</item>
+        <item>Exif.Image.ImageLength@Image Height</item>
+        <item>Exif.Image.Make@Camera</item>
+        <item>Exif.Image.Model@Model</item>
+        <item>Exif.NikonLd3.LensIDNumber@Lens</item>
+        <item>Exif.Photo.MaxApertureValue@Max Aperture value</item>
+        <item>Exif.Photo.UserComment@Comment</item>
+        <item>Exif.Image.DateTimeOriginal@Date and time</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0x50130x0001">Single-frame</string>
+    <string name="p0x50130x0002">Continuous</string>
+    <string name="p0x50130x8010">Continuous (Low speed)</string>
+    <string name="p0x50130x8011">Self-timer</string>
+    <string name="p0x50130x8012">Mirror up acquisition</string>
+    <string name="p0x50130x8013">Liveview</string>
+    <string name="p0x50130x8014">Quick-response remote</string>
+    <string name="p0x50130x8015">2s delayed remote</string>
+    <string name="p0x50130x8016">Quiet</string>
+    <string name="p0x50130x8017">Remote shooting</string>
+	<item type="integer" name="v0x50130x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0x50130x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0x50130x8010" format="integer">0x8010</item>
+	<item type="integer" name="v0x50130x8011" format="integer">0x8011</item>
+	<item type="integer" name="v0x50130x8012" format="integer">0x8012</item>
+	<item type="integer" name="v0x50130x8013" format="integer">0x8013</item>
+	<item type="integer" name="v0x50130x8014" format="integer">0x8014</item>
+	<item type="integer" name="v0x50130x8015" format="integer">0x8015</item>
+	<item type="integer" name="v0x50130x8016" format="integer">0x8016</item>
+	<item type="integer" name="v0x50130x8017" format="integer">0x8017</item>
+</resources>

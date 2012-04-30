@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0x50050x0002">Auto</string>
+    <string name="p0x50050x0004">Sunny</string>
+    <string name="p0x50050x0005">Fluorescent</string>
+    <string name="p0x50050x0006">Incandescent</string>
+    <string name="p0x50050x0007">Flash</string>
+    <string name="p0x50050x8010">Cloudy</string>
+    <string name="p0x50050x8011">Sunny shade</string>
+    <string name="p0x50050x8012">Color temperature setting</string>
+    <string name="p0x50050x8013">Preset</string>
+	<item type="integer" name="v0x50050x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0x50050x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0x50050x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0x50050x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0x50050x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0x50050x8010" format="integer">0x8010</item>
+	<item type="integer" name="v0x50050x8011" format="integer">0x8011</item>
+	<item type="integer" name="v0x50050x8012" format="integer">0x8012</item>
+	<item type="integer" name="v0x50050x8013" format="integer">0x8013</item>
+</resources>

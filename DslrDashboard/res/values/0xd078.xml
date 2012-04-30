@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0780x0001">AE bracketing</string>
+    <string name="p0xd0780x0003">WB bracketing</string>
+    <string name="p0xd0780x0004">ADL bracketing</string>
+	<item type="integer" name="v0xd0780x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0780x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd0780x0004" format="integer">0x0004</item>
+</resources>

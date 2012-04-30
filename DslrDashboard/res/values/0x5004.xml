@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="p0x50040x0000">JPEG (Basic)</string>
+	<string name="p0x50040x0001">JPEG (Normal)</string>
+	<string name="p0x50040x0002">JPEG (Fine)</string>
+	<string name="p0x50040x0003">TIFF (RGB)</string>
+	<string name="p0x50040x0004">RAW</string>
+	<string name="p0x50040x0005">RAW + JPEG (Basic)</string>
+	<string name="p0x50040x0006">RAW + JPEG (Normal)</string>
+	<string name="p0x50040x0007">RAW + JPEG (Fine)</string>
+	<item type="integer" name="v0x50040x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0x50040x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0x50040x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0x50040x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0x50040x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0x50040x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0x50040x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0x50040x0007" format="integer">0x0007</item>
+</resources>

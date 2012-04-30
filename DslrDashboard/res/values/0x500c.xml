@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0x500c0x0002">Flash prohibited</string>
+    <string name="p0x500c0x0004">Red-eye reduction</string>
+    <string name="p0x500c0x8010">Front curtain sync</string>
+    <string name="p0x500c0x8011">Slow sync</string>
+    <string name="p0x500c0x8012">Rear curtain sync</string>
+    <string name="p0x500c0x8013">Red-eye reduction slow sync</string>
+	<item type="integer" name="v0x500c0x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0x500c0x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0x500c0x8010" format="integer">0x8010</item>
+	<item type="integer" name="v0x500c0x8011" format="integer">0x8011</item>
+	<item type="integer" name="v0x500c0x8012" format="integer">0x8012</item>
+	<item type="integer" name="v0x500c0x8013" format="integer">0x8013</item>
+</resources>

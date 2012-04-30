@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd2000x0001">Standard</string>
+    <string name="p0xd2000x0002">Neutral</string>
+    <string name="p0xd2000x0003">Vivid</string>
+    <string name="p0xd2000x0004">Monochrome</string>
+    <string name="p0xd2000x0005">Portrait</string>
+    <string name="p0xd2000x0006">Landscape</string>
+	<item type="integer" name="v0xd2000x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd2000x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd2000x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd2000x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd2000x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0xd2000x0006" format="integer">0x0006</item>
+</resources>

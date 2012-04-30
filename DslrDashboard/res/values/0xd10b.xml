@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd10b0x0000">SD Card</string>
+    <string name="p0xd10b0x0001">SDRAM</string>
+	<item type="integer" name="v0xd10b0x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd10b0x0001" format="integer">0x0001</item>
+</resources>

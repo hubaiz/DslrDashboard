@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1610x0000">[S] Single AF servo</string>
+	<string name="p0xd1610x0001">[C] Continuous AF servo</string>
+	<string name="p0xd1610x0002">[A] AF servo mode automatic switching</string>
+	<string name="p0xd1610x0003">[M] Manual focus (fixed)</string>
+	<string name="p0xd1610x0004">[M] Manual focus (selection)</string>
+	<item type="integer" name="v0xd1610x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1610x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1610x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1610x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd1610x0004" format="integer">0x0004</item>
+</resources>

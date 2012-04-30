@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0f90x0000">Night landscape</string>
+    <string name="p0xd0f90x0001">Party/indoor</string>
+    <string name="p0xd0f90x0002">Beach/snow</string>
+    <string name="p0xd0f90x0003">Sunset</string>
+    <string name="p0xd0f90x0004">Dusk/dawn</string>
+    <string name="p0xd0f90x0005">Pet portrait</string>
+    <string name="p0xd0f90x0006">Candlelight</string>
+    <string name="p0xd0f90x0007">Blossom</string>
+    <string name="p0xd0f90x0008">Autumn colors</string>
+    <string name="p0xd0f90x0009">Food</string>
+    <string name="p0xd0f90x000a">Silhouette</string>
+    <string name="p0xd0f90x000b">High key</string>
+    <string name="p0xd0f90x000c">Low key</string>
+	<item type="integer" name="v0xd0f90x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0f90x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0f90x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0f90x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd0f90x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd0f90x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0xd0f90x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd0f90x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0xd0f90x0008" format="integer">0x0008</item>
+	<item type="integer" name="v0xd0f90x0009" format="integer">0x0009</item>
+	<item type="integer" name="v0xd0f90x000a" format="integer">0x000a</item>
+	<item type="integer" name="v0xd0f90x000b" format="integer">0x000b</item>
+	<item type="integer" name="v0xd0f90x000c" format="integer">0x000c</item>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/tlleftlayout"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:orientation="vertical">
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_tlshoot"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+			android:src="@drawable/shoot"
+			android:background="@drawable/checkableimageview" />
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/chk_tlshootsdram"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+			android:src="@drawable/shootsdram"
+			android:background="@drawable/checkableimageview" />
+		<ImageView android:id="@+id/img_tlaf" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/af"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/intervallayout" android:orientation="horizontal"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/tlleftlayout"
+	    android:layout_alignParentTop="true">
+		<TextView android:id="@+id/lblinterval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal"
+		    android:text="Interval" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_vertical" android:layout_marginRight="10dip" android:layout_marginLeft="10dip"/>
+		<ImageView android:id="@+id/img_iminusm" android:layout_width="48dip" 
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/minusm"/>
+		<ImageView android:id="@+id/img_iminuss" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/minuss"/>
+		<TextView android:id="@+id/txtinterval" android:layout_width="80dip" android:layout_height="wrap_content" android:gravity="center_horizontal"
+		    android:text="0:0" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_vertical"/>
+		<ImageView android:id="@+id/img_ipluss" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/pluss"/>
+		<ImageView android:id="@+id/img_iplusm" android:layout_width="48dip"
+			android:layout_height="48dip" android:background="@drawable/my_button"
+			android:layout_margin="1dip" android:src="@drawable/plusm"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/iterationslayout" android:orientation="horizontal"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/tlleftlayout"
+	    android:layout_below="@+id/intervallayout">
+		<TextView android:id="@+id/lbliterations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal"
+		    android:text="Iterations" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_vertical" android:layout_marginRight="10dip" android:layout_marginLeft="10dip"/>
+            <EditText
+                android:id="@+id/txt_timelapseiterations"
+                android:text="10"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:inputType="number" android:gravity="right" />
+				</LinearLayout>
+		<ProgressBar android:id="@+id/timelapse_progress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent" android:layout_height="15dip"
+			android:layout_toRightOf="@+id/tlleftlayout"
+			android:layout_below="@+id/iterationslayout"
+			android:layout_marginTop="1dip" android:layout_marginBottom="1dip" android:visibility="gone"/>
+		
+</RelativeLayout>

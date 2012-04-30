@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.dslr.dashboard"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout
+	    android:id="@+id/mainLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    >
+	    <!-- 
+	    <com.dslr.dashboard.LayoutMain 
+	        android:id="@+id/layout_mainview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	    <com.dslr.dashboard.LayoutLiveView
+	        android:id="@+id/layout_liveview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	    <com.dslr.dashboard.LayoutBracketing
+	        android:id="@+id/layout_bracketing"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	    <com.dslr.dashboard.LayoutImagePreview
+	        android:id="@+id/layout_imagepreview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	    <com.dslr.dashboard.LayoutPreferences
+	        android:id="@+id/layout_preferences"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	    <com.dslr.dashboard.LayoutAbout
+	        android:id="@+id/layout_about"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"/>
+	        -->
+	    </RelativeLayout>
+		<com.dslr.dashboard.helper.CheckableImageView
+			android:id="@+id/btn_modeswitch"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+			android:layout_width="48dip" android:layout_height="48dip"
+			android:layout_margin="1dip"
+			android:src="@drawable/mainmenu"
+			android:background="@drawable/checkableimageview" />
+		<LinearLayout
+		    android:id="@+id/layout_modebar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_toRightOf="@+id/btn_modeswitch"
+		    android:background="#AA000000"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal"
+		    >
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_main" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/shoot"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_bracketing" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/i0xd0c00x0000"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_timelapse" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/timelapse"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_imagepreview" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/picture"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_preferences" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/settings"/>
+			<com.dslr.dashboard.helper.CheckableImageView 
+			    android:id="@+id/btn_about" android:layout_width="48dip"
+				android:layout_height="48dip" android:background="@drawable/checkableimageview"
+				android:layout_margin="1dip" android:src="@drawable/about"/>
+			<ImageView android:id="@+id/img_stopptp" android:layout_width="48dip" 
+				android:layout_height="48dip" android:background="@drawable/my_button"
+				android:layout_margin="1dip" android:src="@android:drawable/ic_lock_power_off"/>
+											</LinearLayout>
+					    </RelativeLayout>

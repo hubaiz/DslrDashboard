@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:drawable="@drawable/a9p_09_11_00028" /> <!-- pressed -->
+    <item android:state_checked="true"
+          android:drawable="@drawable/a9p_09_11_00025" /> <!-- focused -->
+    <item android:drawable="@drawable/a9p_09_11_00030" /> <!-- default -->
+</selector> 

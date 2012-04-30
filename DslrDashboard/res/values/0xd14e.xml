@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd14e0x0000">Extra high</string>
+    <string name="p0xd14e0x0001">High</string>
+    <string name="p0xd14e0x0002">Normal</string>
+    <string name="p0xd14e0x0003">Low</string>
+    <string name="p0xd14e0x0004">Not performed</string>
+    <string name="p0xd14e0x0005">Auto</string>
+	<item type="integer" name="v0xd14e0x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd14e0x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd14e0x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd14e0x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd14e0x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd14e0x0005" format="integer">0x0005</item>
+</resources>

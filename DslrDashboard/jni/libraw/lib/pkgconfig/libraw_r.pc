@@ -1,0 +1,11 @@
+prefix=/home/hubaiz/workspace/DslrDashboard/jni/libraw
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libraw
+Description: Raw image decoder library (thread-safe)
+Requires: 
+Version: 0.14.5
+Libs: -L${libdir} -lraw -lstdc++
+Cflags: -I${includedir}/libraw

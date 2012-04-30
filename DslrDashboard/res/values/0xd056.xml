@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0560x0000">1/3 EV</string>
+    <string name="p0xd0560x0001">1/2 EV</string>
+	<item type="integer" name="v0xd0560x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0560x0001" format="integer">0x0001</item>
+</resources>

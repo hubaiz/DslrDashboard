@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<com.dslr.dashboard.imgzoom.ImageZoomView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/zoomview"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    />
+
+<TextView 
+    android:id="@+id/txtLoading"
+    android:text="Loading ... "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0x500e0x0001">[M] Manual</string>
+    <string name="p0x500e0x0002">[P] Program auto</string>
+    <string name="p0x500e0x0003">[A] Aperture priority</string>
+    <string name="p0x500e0x0004">[S] Shutter priority</string>
+    <string name="p0x500e0x8010">AUTO</string>
+    <string name="p0x500e0x8011">Portrait</string>
+    <string name="p0x500e0x8012">Landscape</string>
+    <string name="p0x500e0x8013">Close up</string>
+    <string name="p0x500e0x8014">Sports</string>
+    <string name="p0x500e0x8015">Night portrait</string>
+    <string name="p0x500e0x8016">Flash prohibition AUTO</string>
+    <string name="p0x500e0x8017">Child</string>
+    <string name="p0x500e0x8018">SCENE</string>
+    <string name="p0x500e0x8019">EFFECTS</string>
+    <string name="p0x500e0x8050">User mode U1</string>
+    <string name="p0x500e0x8051">User mode U1</string>
+	<item type="integer" name="v0x500e0x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0x500e0x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0x500e0x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0x500e0x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0x500e0x8010" format="integer">0x8010</item>
+	<item type="integer" name="v0x500e0x8011" format="integer">0x8011</item>
+	<item type="integer" name="v0x500e0x8012" format="integer">0x8012</item>
+	<item type="integer" name="v0x500e0x8013" format="integer">0x8013</item>
+	<item type="integer" name="v0x500e0x8014" format="integer">0x8014</item>
+	<item type="integer" name="v0x500e0x8015" format="integer">0x8015</item>
+	<item type="integer" name="v0x500e0x8016" format="integer">0x8016</item>
+	<item type="integer" name="v0x500e0x8017" format="integer">0x8017</item>
+	<item type="integer" name="v0x500e0x8018" format="integer">0x8018</item>
+	<item type="integer" name="v0x500e0x8019" format="integer">0x8019</item>
+	<item type="integer" name="v0x500e0x8050" format="integer">0x8050</item>
+	<item type="integer" name="v0x500e0x8051" format="integer">0x8051</item>
+</resources>

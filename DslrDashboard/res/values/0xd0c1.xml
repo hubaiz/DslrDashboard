@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0c10x0000">0.3 EV</string>
+    <string name="p0xd0c10x0001">0.5 EV</string>
+    <string name="p0xd0c10x0002">0.7 EV</string>
+    <string name="p0xd0c10x0003">1.0 EV</string>
+    <string name="p0xd0c10x0004">1.3 EV</string>
+    <string name="p0xd0c10x0005">1.5 EV</string>
+    <string name="p0xd0c10x0006">1.7 EV</string>
+    <string name="p0xd0c10x0007">2.0 EV</string>
+	<item type="integer" name="v0xd0c10x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0c10x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0c10x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0c10x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd0c10x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd0c10x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0xd0c10x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd0c10x0007" format="integer">0x0007</item>
+</resources>
