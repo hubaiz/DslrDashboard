@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>DSLR Dashboard</title>
+</head>
+<body>
+<div style="text-align: center;"><big><big><big><big><span
+ style="font-weight: bold;">DSLR Dashboard<br>
+<br>
+</span></big></big></big></big>
+<div style="text-align: left;"><big><big><big><big><span
+ style="font-weight: bold;"></span></big></big></big></big>DSLR
+Dashboard is an Android application for controlling your DSLR camera
+(primary for Nikon) &nbsp;with USB. Unfortunatly not all Android phones
+include the required USB support. Currently some of the Android 2.3.x
+and 3.x have the required USB support and Android 4.0.x should have it
+on all devices.<br>
+You can find the application on Google Play for free: <a
+ href="https://play.google.com/store/apps/details?id=com.dslr.dashboard&amp;feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5kc2xyLmRhc2hib2FyZCJd">https://play.google.com/store/apps/details?id=com.dslr.dashboard&amp;feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5kc2xyLmRhc2hib2FyZCJd</a><br>
+To use it you need a cheap USB OTG adapter or cable that you can find
+on internet.(<a
+ href="http://www.dealextreme.com/p/micro-usb-on-the-go-host-otg-adapter-pair-50774">http://www.dealextreme.com/p/micro-usb-on-the-go-host-otg-adapter-pair-50774</a>)<br>
+Some of the application features:<br>
+<ul>
+  <li>reading/writing camera properties</li>
+  <li>initiating capture (to your camera and phone)</li>
+  <li>entering live view (manual focus, zoom in/out, display face fcous)</li>
+  <li>custom bracketing up to 11 images</li>
+  <li>timelapse</li>
+  <li>image preview (RAW NEF format to)</li>
+  <li>sound/noise initiated capture</li>
+</ul>
+There is an open discussion on xda-forums: <a
+ href="http://forum.xda-developers.com/showthread.php?t=1256583">http://forum.xda-developers.com/showthread.php?t=1256583</a><br>
+Feel free to comment, suggest or report errors there.<br>
+<br>
+<span style="font-weight: bold;">DSLR Dashboard main view</span><br>
+<img style="width: 900px; height: 560px;"
+ alt="DSLR Dashboard main screen"
+ src="file:dslrdashboard_main1.png"><br>
+<br>
+Notice: On tablets or phones the display is a bit different if the
+width of the screen is equal or higher then 1280, then the bracketing
+view is combined into the main view.<br>
+<ol>
+  <li>Overlay button that is used to display or hide the buttons from 6
+to 30 when in live view mode</li>
+  <li>Initiate&nbsp;capture. The image will be saved to camera sdcard.
+If focus is not MF (manual focus) and if your lens can support focusing
+the camera will always perform autofocus before initiating the capture.
+If autofocus fails the capture will be not initiated.</li>
+  <li>Initiate capture. The image will be transfered to your phone. All
+from above apply for this to, only the target media is different.</li>
+  <li>Initiate autofocus if your lens can do it.</li>
+  <li>DSLR Dashboard mode overlay button, will be described below.</li>
+  <li>Camera shooting mode selector. Only can be changed if the camera
+is in host mode. See 8.</li>
+  <li>Scene selector if Camera is in Scene mode (6)</li>
+  <li>Camera mode selector. Initialy camera is in camera mode, meaning
+that your can operate controls on your camera (change shooting mode,
+initiate capture, change properties). If you put your camera in host
+mode then the application will have full control over your camera
+properties and the controls on camera will be disabled. You will be
+able to change the camera shooting mode (6).</li>
+  <li>Start the live view mode. If for some reason the live view can't
+be activated you will get a dialog with the prohibition reason(s).
+(recording media (28) should be sdram to be able to enter live view)</li>
+  <li>Camera battery level indicator</li>
+  <li>Current aperture value. Depending camera shooting mode (6) you
+can change the aperture value</li>
+  <li>Current exposure indicator in EV</li>
+  <li>Current shutter speed. Depending camera shooting mode (6) you can
+change the shutter speed.</li>
+  <li>Captured image size. Depending on camera shooting mode (6) and
+image quality seetings (19) you can change the captured image size.</li>
+  <li>Current white balance settings, press to change</li>
+  <li>Current focus metering mode, press to change</li>
+  <li>Current focus mode, press to change. (MF selection is if you
+select the manual focus and MF fixed is when manual focus is selected
+on lens or the lens dosn't support focusing)</li>
+  <li>Shooting operation mode (single, continuous , etc)</li>
+  <li>Captured image quality current setting, press to change</li>
+  <li>Current ISO setting, press to change</li>
+  <li>Current exposure metering mode, press to change</li>
+  <li>Current live view focus mode, press to change</li>
+  <li>Number of continuous shooting frames, press to change (only have
+meaning if &nbsp;shooting operation mode (18) is in continous shooting</li>
+  <li>Current selected internal flash mode, press to change</li>
+  <li>Internal flash exposure compensation, press to change</li>
+  <li>Exposure compensation, press to change</li>
+  <li>Exposure EV step (1/3 or 1/2)</li>
+  <li>Recording media. SDCARD - captured image is saved to sdcard
+located in your camera, SDRAM - captured image is saved to camera
+internal sdram and transfered to your phone</li>
+  <li>Current selected picture control &nbsp;(standard, neutral, vivid,
+etc) press to change</li>
+  <li>Current selected Active D-Ligthing, press to change</li>
+</ol>
+<big><big><big><big><span style="font-weight: bold;"></span></big></big></big></big></div>
+</div>
+</body>
+</html>
