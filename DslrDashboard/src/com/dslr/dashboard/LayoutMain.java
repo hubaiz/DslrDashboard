@@ -836,15 +836,19 @@ public class LayoutMain extends RelativeLayout implements DslrLayout {
 				case PtpProperty.ExposureTime:
 					Long nesto = (Long)property.getValue();
 					Log.i(TAG, "Exposure " + nesto);
-					double value = 1 / ((double)nesto / 10000);
+					//double value = 1 / ((double)nesto / 10000);
 					txtShutter.setVisibility(View.VISIBLE);
 					if (nesto == 4294967295L)
 						txtShutter.setText("Bulb");
 					else {
-						if (value < 1)
-							txtShutter.setText(Math.round(1/value) + "\"");
+						if (nesto >= 10000)
+							txtShutter.setText(String.format("%.1f \"", (double)nesto / 10000));
 						else
-							txtShutter.setText("1/" + Math.round(value));
+							txtShutter.setText(String.format("1/%.1f" , 10000 / (double)nesto));
+//						if (value < 1)
+//							txtShutter.setText(Math.round(1/value) + "\"");
+//						else
+//							txtShutter.setText("1/" + Math.round(value));
 					}
 					txtShutter.setEnabled(property.isWritable()); 			
 					break;

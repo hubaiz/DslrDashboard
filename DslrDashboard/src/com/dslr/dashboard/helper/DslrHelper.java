@@ -274,11 +274,15 @@ public class DslrHelper {
 					if (nesto == 0xffffffffL)
 						str = "Bulb";
 					else {
-						double value = 1 / ((double)nesto / 10000);
-						if (value < 1)
-							str = Math.round(1/value) + "\"";
+						if (nesto >= 10000) 
+							str = String.format("%.1f \"",  (double)nesto / 10000);
 						else
-							str = "1/" + Math.round(value);
+							str = String.format("1/%.1f" , 10000 / (double)nesto);
+//						double value = 1 / ((double)nesto / 10000);
+//						if (value < 1)
+//							str = Math.round(1/value) + "\"";
+//						else
+//							str = "1/" + Math.round(value);
 					}
 					ItemBean item = new ItemBean();
 					item.image = -1;
