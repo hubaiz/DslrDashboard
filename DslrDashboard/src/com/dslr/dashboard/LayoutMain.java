@@ -1013,6 +1013,14 @@ public class LayoutMain extends RelativeLayout implements DslrLayout {
 	public void ptpServiceSet(boolean isSet) {
 		if (isSet && _dslrHelper.getPtpService().getIsPtpDeviceInitialized()){
 			showHideLvOverlay(true);
+			// check warning status
+			PtpProperty prop = _dslrHelper.getPtpService().getPtpProperty(PtpProperty.WarningStatus);
+			if (prop != null) {
+				Integer val = (Integer)prop.getValue();
+				if (val != 0) {
+					warrningStatusMessage(val);
+				}
+			}
 		}
 	}
 
@@ -1328,6 +1336,53 @@ public class LayoutMain extends RelativeLayout implements DslrLayout {
 	}
 	
 	//endregion
+
+	public void warrningStatusMessage(int prohibitionCode){
+		StringBuilder sb = new StringBuilder();
+		int bit = 1;
+		for(int i = 0; i < 8; i++){
+			int value = (int) (prohibitionCode & bit);
+				switch (value){
+				case 1: // bit 0
+					sb.append("Sequence error. \n\n");
+					break;
+				case 2: // bit 1
+					sb.append("Battery insufficient. \n\n");
+					break;
+				case 4: // bit 2
+					sb.append("\n");
+					break;
+				case 8: // bit 3
+					sb.append("Lens shooting prohibited. \n\n");
+					break;
+				case 16: // bit 4
+					sb.append("i-TTL error.  \n\n");
+					break;
+				case 32: // bit 5
+					sb.append("Minimum aperture warning.  \n\n");
+					break;
+				case 64: // bit 6
+					sb.append("Bulb warning.  \n\n");
+					break;
+				case 128: // bit 7
+					sb.append("Check sum error . \n\n");
+					break;
+				}
+			bit = bit << 1;
+		}
+        CustomDialog.Builder customBuilder = new CustomDialog.Builder(_dslrHelper.getContext());
+        customBuilder.setTitle("Liveview prohibition")
+        	.setMessage(sb.toString())
+        	.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.dismiss();
+				}
+			});
+    CustomDialog dialog = customBuilder.create();
+    dialog.show();
+	}
 	
 	public void updateMovieRecStatus(){
 		if (_dslrHelper.getPtpService() != null && _dslrHelper.getPtpService().getIsPtpDeviceInitialized()) {

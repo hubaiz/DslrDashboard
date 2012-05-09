@@ -174,7 +174,7 @@ public class PtpProperty {
     public static final int SceneMode					= 0xd0f9;
     public static final int ShutterSpeed				= 0xd100;
     public static final int ExternalDcIn				= 0xd101;
-    public static final int WarningStatuc				= 0xd102;
+    public static final int WarningStatus				= 0xd102;
     public static final int RemainingExposure			= 0xd103;
     public static final int AfLockStatus				= 0xd104;
     public static final int AeLockStatus				= 0xd105;

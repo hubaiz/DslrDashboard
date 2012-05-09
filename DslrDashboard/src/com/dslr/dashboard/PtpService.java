@@ -834,19 +834,42 @@ public class PtpService extends Service {
 						
 						loadVendorProperties();
 						
-						// load the storage infos
-						getStorageIds();
+						// check the warrning status
+						// camera is in error status (no card inserted) but the warningstatus is still 0
+						// must find another way
 						
-						// load the lens focus range
-						loadLensFocusRange();
+						Log.i(TAG, "Checking warrning status");
+						boolean cont = true;
 						
-						// we are done
-						Log.d(TAG, "Ptp Service initialized");
-						_isPtpDeviceInitialized = true;
-						startEventListener();
-						sendPtpServiceEvent(PtpServiceEventType.PtpDeviceInitialized, null);
+						
+						PtpProperty prop = getPtpProperty(PtpProperty.WarningStatus);
+						if (prop != null) {
+							Log.i(TAG, "Got warrning status property");
+							Integer val = (Integer)prop.getValue();
+							Log.i(TAG, "Warrning status value: " + val);
+							if (val != 0)
+							{
+								cont = false;
+								// don't continue, display the error message
+								sendPtpServiceEvent(PtpServiceEventType.WarrningMessage, val);
+							}
+						}
+						
+						if (cont) {
+							// load the storage infos
+							getStorageIds();
+						
+							// load the lens focus range
+							loadLensFocusRange();
+						
+							// we are done
+							Log.d(TAG, "Ptp Service initialized");
+							_isPtpDeviceInitialized = true;
+							startEventListener();
+							sendPtpServiceEvent(PtpServiceEventType.PtpDeviceInitialized, null);
 
-						enterLiveViewAtStart();
+							enterLiveViewAtStart();
+						}
 					}
 					
 			}
@@ -1272,7 +1295,7 @@ public class PtpService extends Service {
 		if ((cmd == null) || (cmd != null && !cmd.isDataOk()))
 			return;
 		cmd.incomingData().parse();
-		int count= cmd.incomingData().nextS32();
+		int count = cmd.incomingData().nextS32();
 		for(int i = 1; i <= count; i++ ){
 			getStorageInfo(cmd.incomingData().nextS32());
 		}

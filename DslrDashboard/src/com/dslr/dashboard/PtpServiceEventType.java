@@ -39,5 +39,6 @@ public enum PtpServiceEventType {
 	TimelapseEvent,
 	CommandNotification,
 	FocusMaxSet,
-	FocusBktNextImage
+	FocusBktNextImage,
+	WarrningMessage
 }

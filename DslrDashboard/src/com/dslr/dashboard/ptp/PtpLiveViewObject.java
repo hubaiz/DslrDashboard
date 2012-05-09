@@ -65,6 +65,7 @@ public class PtpLiveViewObject {
 		switch (usbDevice.getProductId()){
 		case 0x0429: // d5100
 		case 0x0428: // d7000
+		case 0x042a: // d800
 			noPersons = 35;
 			break;
 		case 0x0423: // d5000
@@ -140,6 +141,7 @@ public class PtpLiveViewObject {
 				break;
 			case 0x0429: // d5100
 			case 0x0428: // d7000
+			case 0x042a: // d800
 				hasRolling = true;
 				rolling = ((double)buf.nextS32(true)) / ONE;
 				hasPitching = true;

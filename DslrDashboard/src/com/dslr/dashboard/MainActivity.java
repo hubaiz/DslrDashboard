@@ -496,6 +496,9 @@ public class MainActivity extends Activity {
 						case FocusBktNextImage:
 							Toast.makeText(MainActivity.this, (String)eventData, 4).show();
 							break;
+						case WarrningMessage:
+							mainLayout.warrningStatusMessage((Integer)eventData);
+							break;
 					}
 				}
 			});
