@@ -398,10 +398,17 @@ public class MainActivity extends Activity {
 			case KeyEvent.KEYCODE_BACK:
 				finish();
 				return true;
+			case KeyEvent.KEYCODE_FOCUS:
+				_dslrHelper.getPtpService().startAfDriveCmd();
+				return true;
+			case KeyEvent.KEYCODE_CAMERA:
+				_dslrHelper.getPtpService().initiateCaptureCmd();
+				return true;
 			default:
 					return super.onKeyDown(keyCode, event);
 		}
 	}
+	
 	private void toggleBarVisibility()
 	{
 		if (!_isTablet){
